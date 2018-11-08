@@ -1,0 +1,30 @@
+//This is the configuration for the SD card cleaner.
+//Can be updated in run time (Program should run when Windows starts).
+//Use double slashes as comments (must be at start of the line)
+
+==========SD_CARD_CLEAR_TIME==========
+//Max age of the files. Files older than this will be removed.
+WEEKS=2
+DAYS=0
+
+==========DIRECTORIES_TO_SCAN==========
+//Directories to scan, like downloads
+//Will check if directory exists before acting
+
+==========DRIVES_TO_SCAN==========
+//Drives (by name) to scan for files
+PRINTER_SD
+
+==========DIRECTORY_NAMES_TO_IGNORE=========
+//Directory names to ignore scanning
+//Used KEEP_ALL_DIRECTORIES to keep all directories
+Archive
+..
+
+==========FILES_TO_IGNORE==========
+//File names to ignore
+//Does a string match
+//Use NEGATE to turn it into a whitelist
+.gcode
+.x3g
+NEGATE
